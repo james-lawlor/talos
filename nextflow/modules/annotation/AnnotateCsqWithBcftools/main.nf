@@ -15,7 +15,11 @@ process AnnotateCsqWithBcftools {
     script:
     """
     bcftools index -t ${vcf}
-    bcftools csq --force -f "${reference}" \
+    bcftools csq \
+    	--threads 4 \
+    	-B 10 \
+    	--force \
+    	-f "${reference}" \
         --local-csq \
         -g ${gff3} \
         -Oz -o "${params.cohort}_csq.vcf.bgz" \

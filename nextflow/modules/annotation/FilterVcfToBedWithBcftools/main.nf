@@ -22,6 +22,7 @@ process FilterVcfToBedWithBcftools {
     	-m -any \
         --write-index=tbi \
         -R ${bed_file} \
+        --threads 4 \
         -Oz -o "${params.cohort}_merged_filtered.vcf.bgz" \
         ${vcf}
     """
