@@ -1,3 +1,11 @@
+work/
+nextflow/processed_annotations
+nextflow/work
+nextflow/*inputs
+nextflow/*outputs
+.nextflow/
+.nextflow*
+large_files/*
 # Python codebase default gitignore (github template)
 
 # hail logs
