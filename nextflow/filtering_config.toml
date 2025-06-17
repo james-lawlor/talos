@@ -8,7 +8,6 @@ pm5 = "ACMG PM5 - missense in same residue as known pathogenic"
 support = "High in Silico Scores"
 sv1 = "Predicted LOF SV"
 svdb = 'SpliceVarDB Predicted Splice-Altering'
-exomiser = 'Variant prioritised by Exomiser'
 
 [GeneratePanelData]
 default_panel = 137
@@ -27,16 +26,15 @@ forced_panels = [ 144,]
 # associated with it will be the number zero (panel IDs must all be numeric, 0 is not in use)
 [[GeneratePanelData.manual_overrides.genes]]
 # this field is mandatory - the ENSG ID of the gene
-ensg = 'ENSG0000012345'
+ensg = 'ENSG00000144285'
 
 # this field should be supplied, if omitted will default to Mono_And_Biallelic
-moi = 'Biallelic'
+moi = 'Mono_And_Biallelic'
 
 # optional - if ommitted the gene symbol will be looked up in the Ensembl data
-symbol = 'AGENE'
+symbol = 'SCN1A'
 
 # optional
-chrom = '1'
 
 [FindGeneSymbolMap]
 chunk_size = 800

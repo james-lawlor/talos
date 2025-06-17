@@ -1,5 +1,7 @@
 
 process MergeVcfsWithBcftools {
+    memory '128 GB'
+    cpus 4
     container params.container
 
     input:
