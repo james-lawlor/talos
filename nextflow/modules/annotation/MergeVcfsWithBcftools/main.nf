@@ -25,6 +25,7 @@ process MergeVcfsWithBcftools {
         # https://github.com/samtools/bcftools/issues/1189
         # -m none means don't merge multi-allelic sites, keep everything atomic
         bcftools merge \
+                -0 \
         	--force-single \
         	-m none \
         	-R ${regions} \

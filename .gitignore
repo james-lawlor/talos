@@ -1,3 +1,7 @@
+*.logs
+*.out
+HA_VCFS
+nextflow/runs
 work/
 nextflow/processed_annotations
 nextflow/work
